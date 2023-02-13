@@ -1,3 +1,17 @@
 h1{
+    text-align: center;
     color: aqua;
 }
+
+@keyframes moveBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+  }
+
+body {
+    background-image: url('Background.png');
+    background-repeat:repeat;
+    animation: moveBackground 40s linear infinite;
+  }
+
+ 
