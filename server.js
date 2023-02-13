@@ -1,21 +1,12 @@
-let fs = require('fs')
-let http = require('http')
-let server = http.createServer()
+const express = require("express");
+const app = express();
 
-server.on('request', (request, response) => {
-    console.log('Tentative de connection sur le site détécté')
+app.use(express.static("public"));
 
-    fs.readFile('frontEnd/index.html', (err, data) => {
-        if (err) {
-            response.writeHead(404)
-            response.end("Ce fichier n'existe pas")
-        } 
-        
-        response.writeHead(200, {
-            'Content-type': 'text/html; charset=utf-8'
-        })
-        response.end(data)
-    })
-})
+app.get("/", function(req, res) {
+  res.sendFile(__dirname + "/frontEnd/index.html");
+});
 
-server.listen(8080)
+app.listen(8080, function() {
+  console.log("Example app listening on port 8080!");
+});
