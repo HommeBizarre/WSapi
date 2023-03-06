@@ -1,0 +1,72 @@
+body {
+    background-image: url('Background.jpg');/*Récupére l'image de fond*/
+    background-attachment:fixed;/*Fixe limage de fond sur l'écran, si on descendelle bouge pas*/
+    background-position: center center; /*centre l'image peu importe la taille de la fenêtre*/
+  }
+
+  h1, h2, p, div{
+    color: red;
+    text-align: center;
+  }
+
+
+#datePicker {
+  background-color: red;
+  color: red;
+}
+
+
+#panel {
+  background-color: rgba(127, 0, 127, 0.5);
+  width: 40%;
+  height: 230px;
+
+  padding-top: 1px;
+  padding-bottom: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+  #rtd-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 50px;
+  }
+  
+  .rtd-data {
+    width: 200px;
+    height: 120px;
+    background-color: #5c5c5c;
+    margin: 30px;
+  }
+
+  /*Change la couleur pour l'humidité, la température et la pression*/
+  #humidite {
+    background-color: rgba(0, 0, 255, 0.5); 
+   }
+
+  #temperature {
+   background-color: rgba(255, 0, 0, 0.5); 
+  }
+
+   #pression {
+    background-color: rgba(230, 154, 56, 0.8); 
+   }
+
+
+  .chart-container {
+    width: 85%;
+    height: 85%;
+    margin: auto;
+    
+  }
+  
+  canvas{
+    background: linear-gradient(to right, rgba(173, 216, 230, 0.8), rgba(255, 255, 224, 0.8));
+    width: 100%;
+    height: 100%;
+  }
