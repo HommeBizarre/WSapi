@@ -1,6 +1,7 @@
-const React = require("react")
+//const React = require("react")
+import React from "react"
 
-class DateDuJour extends React.Component {
+export default class DateDuJour extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -36,12 +37,13 @@ class DateDuJour extends React.Component {
       const dateComplete = nomJour + " " + date.getDate() + " " + nomMois + " " + date.getFullYear();
       const heureComplete = date.getHours() + "H " + minutes + "M " + seconds + "S";
   
-      return React.createElement('h1', { id: 'date' }, [
-        dateComplete,
-        React.createElement('br', null),
-        heureComplete
-      ]);
+      return <h1 id="date">
+          {dateComplete}
+          <br />
+          {heureComplete}
+        </h1>
+        ;
     }
   }
 
-module.exports = DateDuJour;
+//module.exports = DateDuJour;
