@@ -18,6 +18,7 @@
   "homepage": "https://github.com/HommeBizarre/WSapi#readme",
   "description": "",
   "dependencies": {
+    "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2",
     "bootstrap": "^5.3.0-alpha1",
@@ -30,7 +31,8 @@
     "react": "^18.2.0",
     "react-calendar": "^4.0.0",
     "react-datepicker": "^4.10.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "uniq": "^1.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",

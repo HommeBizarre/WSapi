@@ -6,16 +6,13 @@ const GraphicChart = require('../classes/GraphicChart')
 
 
 function Acceuil() {
-  return (
-    React.createElement("div", null,
-      React.createElement("div", { id: "panel" },
-        React.createElement(DateDuJour, null),
-        React.createElement(DonneesReelle, null)
-      ),
-      React.createElement(GraphicChart, null)
-    )
-  );
+    return <div>
+      <div id="panel">
+          <DateDuJour/>
+          <DonneesReelle/>
+      </div>
+      <GraphicChart/>
+  </div>
 }
 
-
-ReactDOM.render(React.createElement(Acceuil, null), document.querySelector("#root"));
+ReactDOM.render(<Acceuil/>, document.querySelector('#root') )
